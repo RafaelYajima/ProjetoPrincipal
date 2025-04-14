@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sistema de Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" href="../css/SistemaDeTarefas.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Sistema de Gerenciamento de Tarefas</h1>
+    </header>
+    <main>
+        <section id="task-form-section" aria-label="Formulário de criação e edição de tarefas">
+            <form id="task-form">
+                <input type="hidden" id="task-id" />
+                <input type="text" id="title" placeholder="Título" required />
+                <textarea id="description" placeholder="Descrição"></textarea>
+                <select id="category" required>
+                    <option value="" disabled selected>Categoria</option>
+                    <option value="Estudo">Estudo</option>
+                    <option value="Trabalho">Trabalho</option>
+                    <option value="Pessoal">Pessoal</option>
+                </select>
+                <input type="date" id="due-date" />
+                <button type="submit">Adicionar Tarefa</button>
+            </form>
+        </section>
+
+        <section class="filters" role="region" aria-label="Filtros de tarefas">
+            <select id="filter-category" aria-label="Filtrar por categoria">
+                <option value="">Todas as Categorias</option>
+                <option value="Estudo">Estudo</option>
+                <option value="Trabalho">Trabalho</option>
+                <option value="Pessoal">Pessoal</option>
+            </select>
+            <select id="filter-status" aria-label="Filtrar por status">
+                <option value="">Todos os Status</option>
+                <option value="Pendente">Pendente</option>
+                <option value="Concluída">Concluída</option>
+            </select>
+            <input type="text" id="search" placeholder="Buscar por palavra-chave" aria-label="Buscar por palavra-chave" />
+            <button id="clear-filters" type="button" aria-label="Limpar filtros e busca">Limpar Filtros</button>
+        </section>
+
+        <section id="kanban-board" aria-label="Quadro Kanban de tarefas">
+            <div class="kanban-column" data-status="Pendente" aria-label="Tarefas Pendentes" tabindex="0">
+                <h2>Pendente</h2>
+                <div class="kanban-task-list" id="kanban-pendente" aria-live="polite" aria-relevant="additions removals"></div>
+            </div>
+            <div class="kanban-column" data-status="Em Progresso" aria-label="Tarefas em Progresso" tabindex="0">
+                <h2>Em Progresso</h2>
+                <div class="kanban-task-list" id="kanban-emprogresso" aria-live="polite" aria-relevant="additions removals"></div>
+            </div>
+            <div class="kanban-column" data-status="Concluída" aria-label="Tarefas Concluídas" tabindex="0">
+                <h2>Concluída</h2>
+                <div class="kanban-task-list" id="kanban-concluida" aria-live="polite" aria-relevant="additions removals"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/SistemaDeTarefas.js"></script>
+</body>
+
+</html>
