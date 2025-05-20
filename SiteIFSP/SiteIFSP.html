@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSP - Coordenadoria Sociopedagógica</title>
+    <link rel="stylesheet" href="../css/SiteIFSP.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <img src="../img/SiteIFSP" class="logo" alt="Logo">
+    </div>
+  </header>
+
+  <!-- Navbar Responsiva -->
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#sobre">SOBRE</a>
+      <a href="#servicos">SERVIÇOS</a>
+      <a href="#atividades">ATIVIDADES</a>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <section id="sobre">
+    <h2>SOBRE</h2>
+    <p>A Coordenadoria Sociopedagógica (CSP) apoia a gestão, docente, discente e seus responsáveis, além de colaborar com outras coordenadorias do campus. A equipe é composta por uma assistente social, psicóloga, nutricionista e pedagogas.</p>
+    <p><strong>Equipe:</strong> Psicóloga Carmen (Coordenação), Assistente Social Daniela, Nutricionista Tatiane, e Pedagogas Adeline e Ana Carolina.</p>
+    <p><strong>Horário de funcionamento:</strong> Segunda a sexta, das 8h às 20h</p>
+    <p><strong>Coordenação:</strong> A coordenação da CSP é indicada pela gestão do campus.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>SERVIÇOS</h2>
+    <ul>
+      <li>Apoio social, educacional, psicológico e nutricional para os estudantes.</li>
+      <li>Acompanhamento individual e coletivo, incluindo de famílias de menores.</li>
+      <li>Ações de apoio nos dez cursos do campus.</li>
+    </ul>
+  </section>
+
+  <section id="atividades">
+    <h2>ATIVIDADES</h2>
+    <ul>
+      <li>Participação em eventos, reuniões de pais e conselhos de cursos.</li>
+      <li>Programa de assistência estudantil coordenado pela assistente social Daniela.</li>
+      <li>Apoio contínuo nas necessidades sociais, educacionais e psicológicas dos estudantes.</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Instituto Federal - Campus Birigui
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
