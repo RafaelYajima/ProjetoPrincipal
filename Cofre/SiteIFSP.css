@@ -20,18 +20,18 @@ header {
 }
 
 .quebrar {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
 }
 
 .quebrar p {
-    flex: 1;
+    flex: 1; 
 }
 
 .quebrar img {
     width: 300px;
-    height: auto;
+    height: auto; 
 }
 
 .logo-container {
@@ -239,10 +239,7 @@ footer {
         margin: 0.5rem 0;
     }
 
-    .structure-grid,
-    .team-grid,
-    .services-grid,
-    .contact-grid {
+    .structure-grid, .team-grid, .services-grid, .contact-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -255,39 +252,4 @@ footer {
     header h1 {
         margin-top: 1rem;
     }
-}
-
-
-.sidebar {
-    width: 250px;
-    padding: 10px;
-}
-
-.menu-btn {
-    color: #006400;
-    border: 2px solid #006400;
-    padding: 10px;
-    width: 100%;
-    text-align: left;
-    font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 5px;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 5px;
-}
-
-.submenu a {
-    display: block;
-    text-decoration: none;
-    color: #006400;
-    margin: 5px 0;
-}
-
-.submenu a:hover {
-    text-decoration: underline;
 }
