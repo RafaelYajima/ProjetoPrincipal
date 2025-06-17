@@ -217,7 +217,7 @@ main {
 
 /* Rodapé */
 footer {
-    background-color: #006633;
+    background: linear-gradient(to right, #004d00, #17882c 50%, #004d00);
     color: white;
     text-align: center;
     padding: 1.5rem;
