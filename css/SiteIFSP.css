@@ -280,6 +280,7 @@ footer {
     position: absolute;
     margin-left: 15px;
     margin-top: 5px;
+    padding: 10px;
 }
 
 .submenu a {
