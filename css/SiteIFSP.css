@@ -278,9 +278,8 @@ footer {
     background-color: #f5f5f5;
     display: none;
     position: absolute;
-    margin-left: 15px;
-    margin-top: 5px;
-    margin-botton: 15px;
+    margin-left: 15px
+    margin-botton: 5px;
 }
 
 .submenu a {
