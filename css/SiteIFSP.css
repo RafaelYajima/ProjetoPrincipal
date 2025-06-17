@@ -275,6 +275,7 @@ footer {
 }
 
 .submenu {
+    background-color: gray;
     display: none;
     position: absolute;
     margin-left: 15px;
